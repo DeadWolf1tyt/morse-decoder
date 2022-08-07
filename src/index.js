@@ -84,7 +84,7 @@ function decode(expr) {
 		messageStr[i] = MORSE_TABLE[item];
 	});
  
-	console.log(messageStr);
+	//console.log(messageStr);
 	let strings = '';
 	messageStr.forEach((item, i) => {
 		if (item === undefined) {
@@ -92,8 +92,8 @@ function decode(expr) {
 		} else {
 			strings += messageStr[i];
 		}
-		console.log(strings);
 	});
+	return strings;
 }
 
 module.exports = {
